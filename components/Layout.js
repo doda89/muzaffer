@@ -1,6 +1,7 @@
 // components/Layout.js
 import Head from 'next/head';
 import Navbar from './Navbar';
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Layout({ children, title }) {
   return (
@@ -14,6 +15,7 @@ export default function Layout({ children, title }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar />
+      <Analytics />
       <main style={styles.mainContent}>{children}</main>
       <footer style={styles.footer}>
         <p>&copy; {new Date().getFullYear()} Muzaffer Dandik</p>
