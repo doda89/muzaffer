@@ -1,5 +1,5 @@
-// components/Navbar.js
 import Link from 'next/link';
+import { FaLinkedin } from 'react-icons/fa'; // Import LinkedIn icon
 
 export default function Navbar() {
   return (
@@ -8,6 +8,9 @@ export default function Navbar() {
       <Link href="/about" style={styles.link}>Hakkında</Link>
       <Link href="/contact" style={styles.link}>İletişim</Link>
       <Link href="/projects" style={styles.link}>Projeler</Link>
+      <a href="https://www.linkedin.com/in/muzaffer-dandik-832b9242" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+        <FaLinkedin size={24} />
+      </a>
     </nav>
   );
 }
@@ -25,6 +28,13 @@ const styles = {
     textDecoration: 'none',
     color: '#333',
     fontWeight: 'bold',
+    backgroundColor: 'transparent', // Ensure background does not change on hover
+  },
+  icon: {
+    color: '#0077b5', // LinkedIn blue color
+    fontWeight: 'bold',
+    textDecoration: 'none',
+    backgroundColor: 'transparent', // Ensure background does not change on hover
   },
   '@media (max-width: 600px)': {
     navbar: {

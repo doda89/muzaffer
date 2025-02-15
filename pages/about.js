@@ -1,28 +1,30 @@
-import Layout from '../components/Layout';
+import styles from '../styles/About.module.css';
 import Image from 'next/image';
 
 export default function About() {
   return (
-    <Layout title="Hakkında">
-      <section className="about-container">
-        {/* Header Section: Profile image and basic info */}
-        <div className="about-header">
-          <div className="profile-picture">
-            <Image src="/MuzafferDandik.jpeg" alt="Muzaffer Dandik" width={300}  height={300}  />
-          </div>
-          <div className="profile-info">
-            <h2>Muzaffer Dandik</h2>
-            <h3 className="highlight">Deneyimli Satış Yöneticisi</h3>
-            <p>
-              <strong>Seyhan, Adana, Türkiye</strong>
-            </p>
-          </div>
+    <div className={styles.aboutContainer}>
+      <div className={styles.aboutHeader}>
+        <div className={styles.profilePicture}>
+          <Image 
+            src="/MuzafferDandik.jpeg" 
+            alt="Muzaffer Dandik" 
+            width={300} 
+            height={300}
+            className={styles.profileImage}
+          />
         </div>
+        <div className={styles.profileInfo}>
+          <h2>Muzaffer Dandik</h2>
+          <h3 className={styles.highlight}>Deneyimli Satış Yöneticisi</h3>
+          <p className={styles.location}><strong>Seyhan, Adana, Türkiye</strong></p>
+        </div>
+      </div>
 
-        {/* Details Section: Summary, Experience, Skills, and Education */}
-        <div className="about-details">
-          <article className="summary">
-            <h3>Özet</h3>
+      <div className={styles.aboutDetails}>
+        <article className={styles.section}>
+          <h3>Özet</h3>
+          <div className={styles.content}>
             <p>
               1983-1990 yılları arasında Bilsan, Kocabaş Kağıt ve Çetin Karton kağıt
               fabrikalarında <strong>Elektrik Bakım ve Onarım Sorumlusu</strong> olarak görev
@@ -42,39 +44,42 @@ export default function About() {
               <em>geniş kapsamlı projelerde deneyimimi en iyi şekilde değerlendirmek</em> için
               ilerlemekteyim.
             </p>
-          </article>
+          </div>
+        </article>
 
-          <article className="experience">
-            <h3>Deneyim</h3>
-            <p>
+        <article className={styles.section}>
+          <h3>Deneyim</h3>
+          <div className={styles.content}>
+            <div className={styles.experienceItem}>
               <strong>Magmaweld Uluslararası Ticaret A.Ş.</strong>
-              <br />
-              Bölge Yöneticisi (Eylül 1990 - Ağustos 2023)
-              <br />
-              Adana, Türkiye
-            </p>
-          </article>
+              <p className={styles.position}>Bölge Yöneticisi</p>
+              <p className={styles.period}>Eylül 1990 - Ağustos 2023</p>
+              <p className={styles.location}>Adana, Türkiye</p>
+            </div>
+          </div>
+        </article>
 
-          <article className="skills">
-            <h3>En Önemli Yetenekler</h3>
-            <ul>
-              <p>-Uluslararası Ticaret</p>
-              <p>-Satış</p>
-              <p>-Ekip Liderliği</p>
-            </ul>
-          </article>
+        <article className={styles.section}>
+          <h3>En Önemli Yetenekler</h3>
+          <div className={styles.skillsList}>
+            <div className={styles.skillItem}>Uluslararası Ticaret</div>
+            <div className={styles.skillItem}>Satış</div>
+            <div className={styles.skillItem}>Ekip Liderliği</div>
+          </div>
+        </article>
 
-          <article className="education">
-            <h3>Eğitim</h3>
-            <p>
+        <article className={styles.section}>
+          <h3>Eğitim</h3>
+          <div className={styles.content}>
+            <div className={styles.educationItem}>
               <strong>Anadolu Üniversitesi</strong>
-              <br />
-              Bilecik Meslek Yüksek Okulu, Elektrik/Elektronik Bakımı ve Onarım Teknolojisi
-              (1981-1983)
-            </p>
-          </article>
-        </div>
-      </section>
-    </Layout>
+              <p>Bilecik Meslek Yüksek Okulu</p>
+              <p>Elektrik/Elektronik Bakımı ve Onarım Teknolojisi</p>
+              <p className={styles.period}>1981-1983</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
   );
 }

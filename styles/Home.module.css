@@ -1,0 +1,103 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
+  
+  .imageWrapper {
+    margin-bottom: 2rem;
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .profileImage:hover {
+    transform: scale(1.05);
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .intro {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .sectionTitle {
+    color: #2d3748;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .content {
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .intro {
+      padding: 1.5rem;
+    }
+    .cta {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #2d3748;
+      color: white;
+      border-radius: 8px;
+    }
+    
+    .ctaButton {
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin-top: 1.5rem;
+      background-color: #4299e1;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    
+    .ctaButton:hover {
+      background-color: #3182ce;
+    }
+  }
+  
