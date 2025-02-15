@@ -7,9 +7,10 @@ export default function Home() {
     <Layout title="Ana Sayfa">
       <section className="hero">
         <Image
-          src="MuzafferDandik.jpeg"
+          src="/MuzafferDandik.jpeg"
           alt="Muzaffer Dandik"
           className="profile-image"
+          width={300}  height={300} 
         />
         <h1>Hoş Geldiniz</h1>
         <p>

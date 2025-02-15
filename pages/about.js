@@ -8,7 +8,7 @@ export default function About() {
         {/* Header Section: Profile image and basic info */}
         <div className="about-header">
           <div className="profile-picture">
-            <Image src="MuzafferDandik.jpeg" alt="Muzaffer Dandik" />
+            <Image src="/MuzafferDandik.jpeg" alt="Muzaffer Dandik" width={300}  height={300}  />
           </div>
           <div className="profile-info">
             <h2>Muzaffer Dandik</h2>

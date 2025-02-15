@@ -359,3 +359,17 @@ nav a:hover {
   font-size: 1.1rem;
   margin-bottom: 8px;
 }
+
+
+/* styles/global.css */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
