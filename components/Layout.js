@@ -19,7 +19,6 @@ export default function Layout({ children, title }) {
       <footer style={styles.footer}>
         <p>&copy; {new Date().getFullYear()} Muzaffer Dandik</p>
       </footer>
-      {children}
       <Analytics />
     </>
   );
